@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Registro Usuario</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script><!-- calendario -->
+
+    <script src="jquery-ui-1.14.0.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+    <br>
+    <header class="container justify-between">
+        <center>
+            <div class="container flex justify-between">
+                <img class="img-fluid" src="img/logo2.jpg" alt="logo GMK Seguros Especialistas en Riesgos y 
+                Seguros">
+                <!-- class="img-fluid" es el responsive desde boostrap -->
+            </div>
+            <br>
+            <h2>REGISTRO DE USUARIO</h2>
+            </div>
+        </center>
+    </header>
+    <main>
+        <article>
+            <center>
+                <section class="container flex justify-between">
+                    <form id="registroForm" action="modelo/registro.php" method="POST" 
+                        onsubmit="return validarFormulario()">
+                        <br><br>
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="usuario de ingreso"
+                            required><br><br>
+
+                        <label for="nombre">Nombres:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+
+
+                        <!-- Campo de Tipo de Documento -->
+                        <label for="tipo_documento">Tipo de Documento:</label>
+                        <select class="" aria-label="Default select example" name="tipo_documento"
+                            id="tipo_documento" required>
+                            <option selected disabled>Seleccione</option>
+                            <option value="cedula">CC</option>
+                            <option value="cedula_Extranjeria">CE</option>
+                            <option value="tarjet_identidad">TI</option>
+                            <option value="registro_civil">RC</option>
+                            <option value="documento_nacional_identidad">DNI</option>
+                        </select><br><br>
+
+                        <!-- Campo de Número de Identidad -->
+                        <label for="numero_identidad">Número de Identidad:</label>
+                        <input type="text" id="numero_identidad" name="numero_identidad" required><br><br>
+
+                        <!-- Campo del correo -->
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required><br><br>
+
+                        <!-- Campo de Número de Teléfono -->
+                        <label for="telefono">Número de Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono" required><br><br>
+                        
+                        <!-- Campo de contraseña -->
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required><br><br>
+                        <label for="contrasena2">Confirmar contraseña:</label>
+                        <input type="password" id="contrasena2" name="contrasena2"
+                            required><br><br>
+
+                            <div class="flex justify-center space-x-2 mt-4">
+                                <input type="submit" class="boton" value="Guardar" role="button"
+                                    style="margin: 20px">
+                                    <a href="sesion.html" class="boton" role="button"
+                                    style="margin: 20px"> Volver</a>
+
+
+</form>
+</center>
+</article>
+</main>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+<script src="js/validaciones.js"></script>
+
+</html>
