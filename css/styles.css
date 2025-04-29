@@ -1,0 +1,122 @@
+*{
+    padding: 0em;
+    margin: 0em;
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.boton{
+
+    padding: 4px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(133, 3, 255);
+    border: 1px solid ;
+    border-color: rgb(250, 242, 250);
+    border-radius: 5px;
+    text-decoration: none;  /*es para quitar el subrayado de un link*/
+
+}
+ /*es para mantener el tamaño igual de las imagenes y el carrusel*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+        width: 80%;
+        margin: auto;
+ }
+
+ 
+.container .card{     /* tarjetas Caracteristicas */
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgb(10, 0, 10);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 1.25s;
+    
+    
+}
+
+.container .card:hover{   /* tarjetas movimiento */
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0);
+}
+
+.container .card img{  /* tamaño de las imagenes en las card*/
+    width: 330px;
+    height: 180px;
+}
+
+
+.container .card h4{  /* titulos de las card negrilla*/
+    font-weight: 600;
+}
+
+.container .card p{  /* texto de las card */
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {  /* imegenes de las card*/
+    font-weight: 500;
+    text-decoration: none;
+    color: #f7f9fa;
+}
+
+.cardAliados{
+
+    width: 330px;
+    height: 180px;
+}
+
+/*etiqueta personalizada para el tamaño de la tarjeta*/
+#nosot { 
+    width: auto;
+    height: auto;
+    text-align: justify;
+    padding: 30px;
+}
+
+#vision, #mision {
+    width: auto;
+    height: auto;
+    text-align: justify;
+    padding: 30px;
+
+}
+
+#portafolio{
+    width: auto;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(248, 248, 248);
+    color: rgb(5, 5, 5);
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    clear: both;
+} 
+
+
+
+.cont{
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+   
+}
